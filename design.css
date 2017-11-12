@@ -25,13 +25,13 @@ body {
 }
 
 .splash #name {
-  font-size: 65px;
+  font-size: 55px;
   font-family: 'Indie Flower', cursive;
   color: white;
 
   position: absolute;
-  left: 17%;
-  top: 35%;
+  left: 15%;
+  top: 55%;
   /*
   margin-left: -195.18px;
   margin-top: -43.5px;
@@ -40,19 +40,45 @@ body {
 }
 
 .splash .sub-text {
-  font-size: 15px;
+  font-size: 13px;
   color: white;
 
   position: absolute;
-  left: 17%;
-  top: 35%;
+  left: 15%;
+  top: 55%;
   /* height of #name text, to put this text below it*/
   margin-top: 102px;
 }
 
 
 .side-bar {
-  width: 12%;
+  width: 0%;
   height: 100vh;
-  background-color: #2c3e50;
+  background-color: #7f8c8d;
+
+  /* makes ui changes take 0.4s linear */
+  transition: 0.4s linear;
+
+  position: relative;
+}
+
+.splash .side-bar .hide-btn {
+  height: 50px;
+  width: 50px;
+  background-color: #bdc3c7;
+
+  font-size: 12px;
+
+
+  position: absolute;
+  top: 0%;
+  left: 100%;
+  /* shift up by half of height to center button vertically */
+  /*margin-top: -25px; */
+  /* shift up by entire width to center button vertically */
+  margin-left: -0px;
+
+
+  /* makes ui changes take 0.4s linear */
+  transition: 0.4s linear;
 }
