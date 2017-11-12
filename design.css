@@ -1,0 +1,58 @@
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+
+* { margin:0; padding:0; box-sizing:border-box; }
+
+html {
+  font-family: 'Open Sans', sans-serif;
+}
+
+body {
+
+}
+
+
+.splash {
+  height: 100vh; /* 100% of view height */
+  width: 100%;
+  min-width: 800px; /* to keep #name from text-wrapping*/
+  background-image: url('images/splash-blackwood.jpg');
+
+  /* position = relative in this parent else child will move relative to
+  body instead of this parent */
+  position: relative;
+}
+
+.splash #name {
+  font-size: 65px;
+  font-family: 'Indie Flower', cursive;
+  color: white;
+
+  position: absolute;
+  left: 17%;
+  top: 35%;
+  /*
+  margin-left: -195.18px;
+  margin-top: -43.5px;
+  */
+
+}
+
+.splash .sub-text {
+  font-size: 15px;
+  color: white;
+
+  position: absolute;
+  left: 17%;
+  top: 35%;
+  /* height of #name text, to put this text below it*/
+  margin-top: 102px;
+}
+
+
+.side-bar {
+  width: 12%;
+  height: 100vh;
+  background-color: #2c3e50;
+}
