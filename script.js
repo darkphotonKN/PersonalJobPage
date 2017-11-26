@@ -27,10 +27,7 @@ function subText(event, action) {
   });
 }
 
-// iniate all JS functionality
-function init() {
-  //var hideButton = document.getElementById("hideBtn");
-  //menu(hideButton);
+function navigation() {
   var subText = document.getElementById("sub-text");
   var resume = document.getElementById("resume");
   var home = document.getElementById("home");
@@ -41,10 +38,16 @@ function init() {
   });
 
   home.addEventListener('click', function() {
-    subText.innerHTML = 'Front End Web / Java / Android Developer</br>MOBILE: (+886)925711860</br>EMAIL: darkphoton20@gmail.com</br>';
-    //subText.style.fontSize = '20px';
+    subText.innerHTML = 'I&#39;m an aspiring Front End Web, Java, and Android Developer.</br></br>Day-to-Day: Angular, MySQL, NodeJS.</br>Experienced in HTML5/CCS3, Javascript, ReactJS, Java, and Python.</br>MOBILE: (+886)925711860</br>EMAIL: darkphoton20@gmail.com</br>';
+    subText.style.fontSize = '13px';
   });
+}
 
+// iniate all JS functionality
+function init() {
+  //var hideButton = document.getElementById("hideBtn");
+  //menu(hideButton);
+  navigation();
 }
 
 
