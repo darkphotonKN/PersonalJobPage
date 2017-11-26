@@ -2,17 +2,17 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 @import url('https://fonts.googleapis.com/css?family=Indie+Flower');
 
-* { margin:0; padding:0; box-sizing:border-box; }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 html {
   font-family: 'Open Sans', sans-serif;
 }
 
-body {
-
-}
-
-
+/* welcome page background */
 .splash {
   height: 100vh; /* 100% of view height */
   width: 100%;
@@ -20,11 +20,15 @@ body {
   background-image: url('images/splash-blackwood.jpg');
 
   /* position = relative in this parent else child will move relative to
-  body instead of this parent */
+  body instead of this parent, removed until sidebar is added again
   position: relative;
+  */
+  position: absolute;
 }
 
+/* main title (name) */
 .splash #name {
+
   font-size: 55px;
   font-family: 'Indie Flower', cursive;
   color: white;
@@ -36,9 +40,9 @@ body {
   margin-left: -195.18px;
   margin-top: -43.5px;
   */
-
 }
 
+/* user info under name */
 .splash .sub-text {
   font-size: 13px;
   color: white;
@@ -51,6 +55,41 @@ body {
 }
 
 
+/* Navigation Bar (responsive design) */
+#nav-bar {
+  font-size: 18px;
+  color: white;
+  letter-spacing: 2px;
+  word-spacing: 5px;
+
+  margin-left: 70%;
+  margin-top: 15vh;
+
+  transition: 0.5s linear;
+  cursor: pointer;
+}
+
+.nav-bar {
+  display: inline;
+}
+
+/* mouseover effects */
+.nav-bar:hover {
+  color: #bdc3c7;
+  transition: 0.2s linear;
+}
+/* line below nav */
+hr {
+  width: 400px;
+  margin-top: 3px;
+  margin-left: auto;
+  margin-right: 12.5%;
+  opacity: 0.3;
+}
+
+
+/* side bar -REMOVED FOR NOW- */
+
 .side-bar {
   width: 0%;
   height: 100vh;
@@ -59,26 +98,38 @@ body {
   /* makes ui changes take 0.4s linear */
   transition: 0.4s linear;
 
+  /* position = relative in this parent else child will move relative to
+  body instead of this parent */
   position: relative;
 }
 
+/* menu show/hide button */
 .splash .side-bar .hide-btn {
   height: 50px;
   width: 50px;
   background-color: #bdc3c7;
 
   font-size: 12px;
-
+  font-weight: bold;
 
   position: absolute;
   top: 0%;
   left: 100%;
-  /* shift up by half of height to center button vertically */
-  /*margin-top: -25px; */
+
   /* shift up by entire width to center button vertically */
   margin-left: -0px;
+  border-radius: 3px;
 
+  /* shift text away from edges */
+  padding-left: 3px;
+  padding-top: 3px;
 
   /* makes ui changes take 0.4s linear */
   transition: 0.4s linear;
+}
+
+/* animation when button is clicked */
+.hide-btn:active {
+  /* give it a pressed effect */
+  transform: translateY(6px);
 }
