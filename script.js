@@ -31,16 +31,45 @@ function navigation() {
   var subText = document.getElementById("sub-text");
   var resume = document.getElementById("resume");
   var home = document.getElementById("home");
+  var contact = document.getElementById("contact");
+  var projects = document.getElementById("projects");
+
 
   resume.addEventListener('click', function() {
     subText.innerHTML = 'View resume click <a href>here</a>.';
     subText.style.fontSize = '20px';
+    subText.style.marginLeft = '0px';
+    subText.style.marginTop = '102px'; // return to original margin so text is below name
+    subText.style.fontWeight = 'normal';
+
   });
 
   home.addEventListener('click', function() {
-    subText.innerHTML = 'I&#39;m an aspiring Front End Web, Java, and Android Developer.</br></br>Day-to-Day: Angular, MySQL, NodeJS.</br>Experienced in HTML5/CCS3, Javascript, ReactJS, Java, and Python.</br>MOBILE: (+886)925711860</br>EMAIL: darkphoton20@gmail.com</br>';
-    subText.style.fontSize = '13px';
+    subText.innerHTML = 'I&#39;m an aspiring Front End Web, Java, and Android Developer.</br></br>Familiar: JQuery, Angular, MySQL, NodeJS.</br>Experienced: HTML5/CCS3, Javascript, ReactJS, Java, and Python.</br>MOBILE: (+886)925711860</br>EMAIL: darkphoton20@gmail.com</br>';
+    subText.style.fontSize = '14px';
+    subText.style.marginLeft = '0px';
+    subText.style.marginTop = '102px'; // return to original margin so text is below name
+    subText.style.fontWeight = 'normal';
+
   });
+
+  contact.addEventListener('click', function() {
+    subText.innerHTML = 'For Work, Web Design, or Assistance Please Contact Me Via</br>MOBILE: (+886)925711860</br>EMAIL: darkphoton20@gmail.com</br>';
+    subText.style.fontSize = '20px';
+    subText.style.marginLeft = '50%';
+    subText.style.marginTop = '-280px'; // put content at the top of the page
+    subText.style.fontWeight = 'bold';
+
+  });
+
+  projects.addEventListener('click', function() {
+    subText.innerHTML = '<u>List of Projects</u>';
+    subText.style.fontSize = '22px';
+    subText.style.marginLeft = '32%';
+    subText.style.marginTop = '-280px'; // put content at the top of the page
+    subText.style.fontWeight = 'bold';
+  });
+
 }
 
 // iniate all JS functionality
